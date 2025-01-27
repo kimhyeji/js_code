@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 메인 페이지 -->
+    <header class="Main-page">
+      <div class="swiper mySwiper">
+        <div class="Main-tit">
+          <h2>
+            <strong>
+              프레드 피자
+              <br />
+              새로운 도우 등장!
+              <br />
+              순수우유도우
+            </strong>
+
+            <strong>
+              이제 프레드에서
+              <br />
+              도우도 골라먹자!
+              <br />
+              순수우유도우
+            </strong>
+
+            <strong>
+              꽉 찬 토핑!
+              <br />
+              이러니까 아무도
+              <br />
+              못비비지!
+            </strong>
+            <strong>
+              미트X미트X미트
+              <br />
+              극강의 미트토핑
+              <br />
+              메가디럭스
+            </strong>
+            <small>
+              <span
+                ><em>우유의 순수함을 담아 완성된 깊은 풍미와 부드러움</em></span
+              >
+              <span><em>더 부드럽고 촉촉한 순수우유도우</em></span>
+              <span><em>있었지만 없었던 피자, 프레드 피자!</em></span>
+              <span><em>육즙 가득한 고기와 신선한 야채의 조화</em></span>
+            </small>
+          </h2>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="http://fredpizza5.cafe24.com/banner/milkdough_1.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="http://fredpizza5.cafe24.com/banner/milkbanner02_PC.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="http://fredpizza5.cafe24.com/banner/banner1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="http://fredpizza5.cafe24.com/banner/banner2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="slide_wrap">
+        <!-- <div class="slide_mask slide_mask3 swiper-container">
+                  <div class="swiper-wrapper">
+                        <div class="item swiper-slide"><p>01</p></div>
+                        <div class="item swiper-slide"><p>02</p></div>
+                        <div class="item swiper-slide"><p>03</p></div>
+                        <div class="item swiper-slide"><p>04</p></div>
+                  </div> -->
+        <div class="pager"></div>
+      </div>
+      <!-- </div> -->
+
+      <!--  탑바  -->
+      <div class="top-bar-box">
+        <!--   로고   -->
+        <div class="top-bar_logo">
+          <a href="#">
+            <img
+              class="image1"
+              src="https://www.fredpizza.co.kr/asset/img/common/logo.png"
+              alt=""
+            />
+            <img
+              class="image2"
+              src="https://www.fredpizza.co.kr/asset/img/common/logo_red.png"
+              alt=""
+            />
+          </a>
+        </div>
+
+        <!--   메뉴   -->
+        <nav class="tab-bar">
+          <div>
+            <ul class="tab-bar_manu flex">
+              <li>
+                <a class="top-bar_menu-item" href="#">브랜드</a>
+                <ul class="tab-bar-manu_item-1 item">
+                  <li>
+                    <a href="#">브랜드 스토리</a>
+                  </li>
+                  <li>
+                    <a href="#">연혁</a>
+                  </li>
+                  <li>
+                    <a href="#">오시는 길</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="top-bar_menu-item" href="#">메뉴</a>
+                <ul class="tab-bar-manu_item-2 item">
+                  <li>
+                    <a href="#">피자</a>
+                  </li>
+                  <li>
+                    <a href="#">사이드</a>
+                  </li>
+                  <li>
+                    <a href="#">세트</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="top-bar_menu-item" href="#">매장</a>
+                <ul class="tab-bar-manu_item-3 item">
+                  <li>
+                    <a href="#">매장 찾기</a>
+                  </li>
+                  <li>
+                    <a href="#">우수 가맹점</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="top-bar_menu-item" href="#">뉴스</a>
+                <ul class="tab-bar-manu_item-4 item">
+                  <li>
+                    <a href="#">새소식</a>
+                  </li>
+                  <li>
+                    <a href="#">이벤트</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="top-bar_menu-item" href="#">창업</a>
+                <ul class="tab-bar-manu_item-5 item">
+                  <li>
+                    <a href="#">창업 경쟁력</a>
+                  </li>
+                  <li>
+                    <a href="#">창업 안내</a>
+                  </li>
+                  <li>
+                    <a href="#">창업비용 및 절차</a>
+                  </li>
+                  <li>
+                    <a href="#">가맹 FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#">창업문의</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- 상단버튼 -->
+      <div class="fixed-btn none">
+        <button class="btn top" onclick="window.scrollTo(0,0);">
+          <img
+            src="https://www.fredpizza.co.kr/asset/img/common/arrow_top_white.png"
+            alt=""
+          />
+          <span>Top</span>
+        </button>
+        <a href="#" class="btn inquiry">
+          <span>
+            가맹
+            <br />
+            문의
+          </span>
+        </a>
+      </div>
+
+      <!-- Fred Best Menu -->
+      <div class="Best-menu">
+        <div class="menu">
+          <div class="menu-tit">
+            <span>Fred Best Menu</span>
+          </div>
+          <div class="menu-item_box flex">
+            <div class="swiper my-Swiper-1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <span class="new">
+                      <span class="new-txt">new</span>
+                    </span>
+                    <div class="img-box">
+                      <img
+                        src="http://fredpizza5.cafe24.com/menu/milk_qurtercheese.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txt-box">
+                      <h2>쿼터치즈벅피자</h2>
+                      <span>Quater Cheesebuck Pizza</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <span class="new">
+                      <span class="new-txt">new</span>
+                    </span>
+                    <div class="img-box">
+                      <img
+                        src="http://fredpizza5.cafe24.com/menu/milk_megadeluxe.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txt-box">
+                      <h2>메가디럭스피자</h2>
+                      <span>Mega Deluxe Pizza</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <span class="new">
+                      <span class="new-txt">new</span>
+                    </span>
+                    <div class="img-box">
+                      <img
+                        src="http://fredpizza5.cafe24.com/menu/milk_garlicshrimflex.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txt-box">
+                      <h2>갈릭쉬림플렉스피자</h2>
+                      <span>Garlic Shrimflex Pizza</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <span class="best">
+                      <span class="best-txt">Best</span>
+                    </span>
+                    <div class="img-box">
+                      <img
+                        src="http://fredpizza5.cafe24.com/menu/milk_shrimflex.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txt-box">
+                      <h2>쉬림플렉스피자</h2>
+                      <span>Shrimflex Pizza</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="img-box">
+                      <img
+                        src="http://fredpizza5.cafe24.com/menu/milk_cheese.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txt-box">
+                      <h2>치즈피자</h2>
+                      <span>Cheese Pizza</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <span class="best">
+                      <span class="best-txt">Best</span>
+                    </span>
+                    <div class="img-box">
+                      <img
+                        src="http://fredpizza5.cafe24.com/menu/milk_pepperoni.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txt-box">
+                      <h2>페퍼로니피자</h2>
+                      <span>Pepperoni Pizza</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="img-box">
+                      <img
+                        src="http://fredpizza5.cafe24.com/menu/milk_bacondeep.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txt-box">
+                      <h2>베이컨딥체다치즈피자</h2>
+                      <span>Bacon Deep Cheddar Cheese Pizza</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="img-box">
+                      <img
+                        src="http://fredpizza5.cafe24.com/menu/milk_Jpepperoni.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txt-box">
+                      <h2>할라로니피자</h2>
+                      <span>Jalapenos Pepperoni Pizza</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="img-box">
+                      <img
+                        src="http://fredpizza5.cafe24.com/menu/milk_realmeat.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txt-box">
+                      <h2>리얼미트피자</h2>
+                      <span>Real Meat Pizza</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="img-box">
+                      <img
+                        src="http://fredpizza5.cafe24.com/menu/milk_hawaiian.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txt-box">
+                      <h2>하와이안피자</h2>
+                      <span>Hawaiian Pizza</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next-1"></div>
+              <div class="swiper-button-prev-1"></div>
+              <div class="swiper-pagination-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Promotion Video -->
+      <div class="video-box">
+        <div class="bg">
+          <img
+            src="https://www.fredpizza.co.kr/asset/img/main/s3_bg.png"
+            alt=""
+          />
+        </div>
+        <div class="video-tit">
+          <span>Promotion Video</span>
+        </div>
+        <div class="video">
+          <iframe
+            width="1280"
+            height="720"
+            src="https://www.youtube.com/embed/gkga7Oz90v0?si=xRWzyCrcfod9xmbd"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <!-- section-3 animation -->
+        <div class="sec-ani ani-1 flex select-none">
+          <div class="txt">
+            <strong>THE MOST DELICIOUS CHOICE!&nbsp;</strong>
+            <span>THE MOST DELICIOUS CHOICE!&nbsp;</span>
+            <strong>THE MOST DELICIOUS CHOICE!&nbsp;</strong>
+            <span>THE MOST DELICIOUS CHOICE!&nbsp;</span>
+            <span>THE MOST DELICIOUS CHOICE!&nbsp;</span>
+          </div>
+        </div>
+        <div class="sec-ani ani-2 flex">
+          <div class="txt">
+            <strong>THE MOST DELICIOUS CHOICE!</strong>
+            <span>THE MOST DELICIOUS CHOICE!</span>
+          </div>
+          <div class="txt">
+            <strong>THE MOST DELICIOUS CHOICE!</strong>
+            <span>THE MOST DELICIOUS CHOICE!</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brand Story -->
+      <div class="sec4">
+        <div class="wrap top">
+          <div class="absol">
+            <strong class="title-txt-box">Brand Story</strong>
+            <small>프레드 피자는 고객님의 일상을 행복으로 채워,</small>
+            <small>가장 최고의 순간이 될 수 있도록 함께 합니다.</small>
+            <a class="more-btn" href="https://www.fredpizza.co.kr/brand/">
+              <span>자세히 보기</span>
+            </a>
+          </div>
+          <div
+            class="swiper se04sw swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"
+          >
+            <div
+              class="swiper-wrapper swiper_1"
+              style="
+                transition-duration: 0ms;
+                transform: translate3d(-6500px, 0px, 0px);
+              "
+              id="swiper-wrapper-c702cd7bd9c17a9e"
+              aria-live="polite"
+            >
+              <div
+                class="swiper-slide slide-2 swiper-slide-duplicate"
+                data-swiper-slide-index="1"
+                role="group"
+                aria-label="2 / 3"
+                style="width: 1276px; margin-right: 24px"
+              >
+                <div class="img-area">
+                  <div class="img-box">
+                    <img
+                      class="_max"
+                      src="https://www.fredpizza.co.kr/asset/img/main/s4_happiness.png"
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <em class="txt-shadow">
+                      <span>Happiness</span>
+                    </em>
+                    <small>
+                      <span>건강하고, 행복한 삶을 위해 노력합니다.</span>
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="swiper-slide slide-2 swiper-slide-duplicate swiper-slide-duplicate-prev"
+                data-swiper-slide-index="2"
+                role="group"
+                aria-label="3 / 3"
+                style="width: 1276px; margin-right: 24px"
+              >
+                <div class="img-area">
+                  <div class="img-box">
+                    <img
+                      class="_max"
+                      src="https://www.fredpizza.co.kr/asset/img/main/s4_trust.png"
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <em class="txt-shadow">
+                      <span>Trust</span>
+                    </em>
+                    <small>
+                      <span>투명 경영을 통해 신뢰를 기반으로 상생합니다.</span>
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="swiper-slide slide-2 swiper-slide-duplicate"
+                data-swiper-slide-index="0"
+                role="group"
+                aria-label="1 / 3"
+                style="width: 1276px; margin-right: 24px"
+              >
+                <div class="img-area">
+                  <div class="img-box">
+                    <img
+                      class="_max"
+                      src="https://www.fredpizza.co.kr/asset/img/main/s4_customer.png"
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <em class="txt-shadow">
+                      <span>Customer</span>
+                    </em>
+                    <small>
+                      <span
+                        >항상 고객님을 먼저 생각하며, 최고를 추구합니다.</span
+                      >
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="swiper-slide slide-2 swiper-slide-duplicate swiper-slide-duplicate-active"
+                data-swiper-slide-index="1"
+                role="group"
+                aria-label="2 / 3"
+                style="width: 1276px; margin-right: 24px"
+              >
+                <div class="img-area">
+                  <div class="img-box">
+                    <img
+                      class="_max"
+                      src="https://www.fredpizza.co.kr/asset/img/main/s4_happiness.png"
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <em class="txt-shadow">
+                      <span>Happiness</span>
+                    </em>
+                    <small>
+                      <span>건강하고, 행복한 삶을 위해 노력합니다.</span>
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="swiper-slide slide-2 swiper-slide-duplicate swiper-slide-duplicate-prev"
+                data-swiper-slide-index="2"
+                role="group"
+                aria-label="3 / 3"
+                style="width: 1276px; margin-right: 24px"
+              >
+                <div class="img-area">
+                  <div class="img-box">
+                    <img
+                      class="_max"
+                      src="https://www.fredpizza.co.kr/asset/img/main/s4_trust.png"
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <em class="txt-shadow">
+                      <span>Trust</span>
+                    </em>
+                    <small>
+                      <span>투명 경영을 통해 신뢰를 기반으로 상생합니다.</span>
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="swiper-slide slide-2 swiper-slide-duplicate"
+                data-swiper-slide-index="0"
+                role="group"
+                aria-label="1 / 3"
+                style="width: 1276px; margin-right: 24px"
+              >
+                <div class="img-area">
+                  <div class="img-box">
+                    <img
+                      class="_max"
+                      src="https://www.fredpizza.co.kr/asset/img/main/s4_customer.png"
+                    />
+                  </div>
+                  <div class="txt-box">
+                    <em class="txt-shadow">
+                      <span>Customer</span>
+                    </em>
+                    <small>
+                      <span
+                        >항상 고객님을 먼저 생각하며, 최고를 추구합니다.</span
+                      >
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="arrow-box">
+                        <div class="swiper-button-prev_3 circle" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-c702cd7bd9c17a9e"></div>
+                        <div class="swiper-button-next_3 circle" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-c702cd7bd9c17a9e"></div>
+                    </div> -->
+            <div class="bottom">
+              <div class="wrap" max="1280">
+                <div class="img-box">
+                  <img
+                    src="https://www.fredpizza.co.kr/asset/img/main/s4_bottom.png"
+                    alt=""
+                  />
+                </div>
+                <div class="title-txt-box">
+                  <strong>
+                    <span>BE a Family</span>
+                    <br />
+                    <span>with Fred</span>
+                  </strong>
+                  <small>
+                    <span>프레드와 가족이 될 가맹점 점주님을 모집합니다.</span>
+                  </small>
+                  <div class="img-box mo">
+                    <img
+                      src="https://www.fredpizza.co.kr/asset/img/main/s4_bottom.png"
+                      alt=""
+                    />
+                  </div>
+                  <a class="more-btn" href="#">
+                    <span>자세히 보기</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Store -->
+      <div class="sec5">
+        <div class="bg">
+          <!-- <img src="https://www.fredpizza.co.kr/asset/img/main/s5_bg.png" alt="" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%);"> -->
+        </div>
+        <div class="search-store">
+          <h3 class="tit">
+            <span
+              style="
+                translate: none;
+                rotate: none;
+                scale: none;
+                transform: translate(0px, 0px);
+                opacity: 1;
+              "
+              >Search Store</span
+            >
+            <small
+              style="
+                translate: none;
+                rotate: none;
+                scale: none;
+                transform: translate(0px, 0px);
+                opacity: 1;
+              "
+              >가까운 프레드 피자 매장을 검색해보세요!</small
+            >
+          </h3>
+          <div
+            class="search-area"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform: translate(0px, 0%);
+              opacity: 1;
+              max-width: 840px;
+            "
+          >
+            <a href="#">
+              <div class="bar">
+                <small>
+                  <span
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(0px, 0%);
+                      opacity: 1;
+                    "
+                    >매장 찾기 바로가기</span
+                  >
+                </small>
+              </div>
+              <div class="circle">
+                <img
+                  src="https://www.fredpizza.co.kr/asset/img/common/search_white.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event -->
+      <div class="sec6">
+        <div class="warp">
+          <h3 class="tit">
+            <span>Event</span>
+            <small>프레드 피자에서 진행중인 다양한 이벤트를 즐겨보세요!</small>
+          </h3>
+        </div>
+        <div class="warp">
+          <ul>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="https://www.fredpizza.co.kr/storage/gallery/cb0168666e13882b5cdb914588baeb9d_KkEJVvso_d9bea246f1a72d49b7928d88a5079d2a5d5c88c1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="txt-box">
+                  <em>[Event] 100% 당첨! 꽝없는 프레드 행운복권!</em>
+                  <small></small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="https://www.fredpizza.co.kr/storage/gallery/cb0168666e13882b5cdb914588baeb9d_6SZohVE1_8fa8aeaaaf67905865ee308647a8b0e9a9cc9039.png"
+                    alt=""
+                  />
+                </div>
+                <div class="txt-box">
+                  <em
+                    >[Event] 2025 새해맞이 웰컴혜택 배민 첫주문 6,000원
+                    할인!</em
+                  >
+                  <small>25/01/01 - 25/01/31</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="https://www.fredpizza.co.kr/storage/gallery/cb0168666e13882b5cdb914588baeb9d_Awp41zWK_e874010132eb3074c1984a68a3cb3a30f641ad17.png"
+                    alt=""
+                  />
+                </div>
+                <div class="txt-box">
+                  <em
+                    >[Event] 12월 배민 브랜드관 할인 이벤트 및 쿠팡이츠 할인
+                    이벤트!</em
+                  >
+                  <small>24.12.01~24.12.31</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <a class="more-btn" href="#">
+            <span>이벤트 더보기</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- news -->
+      <div class="sec7">
+        <div class="bg">
+          <img
+            src="https://www.fredpizza.co.kr/asset/img/main/s7_bg.png"
+            alt=""
+          />
+        </div>
+        <div class="warp">
+          <div
+            class="box notice"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform: translate(0px, 0px);
+              opacity: 1;
+            "
+          >
+            <div class="top">
+              <h4>Notice</h4>
+              <a href="#">
+                <span>더보기</span>
+              </a>
+            </div>
+            <ul class="con">
+              <li>
+                <a href="">
+                  <span>프레드피자 첫 전속모델 '비비(BIBI)' 선정</span>
+                  <small>2024.02.05.</small>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>프레드피자 신메뉴 3종 출시</span>
+                  <small>2024.02.05.</small>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>한달간 BIG 창업 프로모션 지원</span>
+                  <small>2024.02.05.</small>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="warp">
+          <div class="box news">
+            <div class="top">
+              <h4>News</h4>
+              <a href="#">
+                <span>더보기</span>
+              </a>
+            </div>
+            <ul class="con">
+              <li>
+                <a href="#">
+                  <span
+                    >프레드피자, ‘로열티 전액 면제·임대료 지원’ 등 창업혜택
+                    확대</span
+                  >
+                  <small>2024.11.18.</small>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span
+                    >프레드피자,순수우유도우 출시 2주만에 높은 판매율 기록</span
+                  >
+                  <small>2024.09.19.</small>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>프레드피자,신제품 '순수우유도우' 공식 출시</span>
+                  <small>2024.09.03.</small>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- footer -->
+    <footer>
+      <div class="warp">
+        <div class="txt-box">
+          <div class="top">
+            <a class="bar" href="#">
+              <span>개인정보처리방침</span>
+            </a>
+            <a href="#">
+              <span>이메일 무단 수집 거부</span>
+            </a>
+          </div>
+          <div class="info">
+            <div class="col">
+              <span class="bar"> 프레드피자(주) </span>
+              <span class="bar"> 대표이사: 강태성 </span>
+              <span class="bar"> 사업자등록번호: 891-88-02080 </span>
+              <span class="bar">
+                부산광역시 남구 진남로 29번길 28 프레드피자
+              </span>
+              <span class="bar"> 이메일: fredpizza_official@naver.com </span>
+              <span class="bar">
+                마케팅 협업 제안: fredpizza.creative@gmail.com
+              </span>
+              <span class="bar"> 가맹문의 및 고객지원: 1811-9809 </span>
+            </div>
+            <div class="copy">
+              <span>Copyright ©프레드피자(주) All Rights Reserved.</span>
+            </div>
+          </div>
+        </div>
+        <div class="sns">
+          <a href="#">
+            <img
+              src="https://www.fredpizza.co.kr/asset/img/common/instagram.png"
+              alt=""
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://www.fredpizza.co.kr/asset/img/common//facebook.png"
+              alt=""
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://www.fredpizza.co.kr/asset/img/common/kakao.png"
+              alt=""
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://www.fredpizza.co.kr/asset/img/common/youtube.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
