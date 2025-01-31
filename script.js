@@ -1,12 +1,14 @@
 // top bar menu item slide
 $('.tab-bar_manu > li').on('mouseover', function(){
     $('.item').stop().slideUp(200)
-    $(this).children('.item').stop().slideDown(130)
+    $(this).children('.item').stop().slideDown(130);
 });
 
 $('.tab-bar_manu > li').on('mouseleave', function(){
-    $(this).children('.item').stop().slideUp(130)
+    $(this).children('.item').stop().slideUp(130);
 });
+
+$('.item').hide();
 
 // Main page slide
 var swiper = new Swiper(".mySwiper", {

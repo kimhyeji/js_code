@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+
 html,
 body {
   overflow-x: hidden; /* 스크롤 활성화 */
@@ -718,90 +721,63 @@ body {
 
 /* sec animation start */
 .Main-page > .video-box > .sec-ani {
-  height: 150px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  border: 10px solid red;
+	background-color: #fff;
+  padding-top: 100px;
 }
 
-.Main-page > .video-box > .ani-1 > .txt {
-  /* margin-top: 5%;
-  position: relative;
-  width: 2600px;
-  animation: ani-1 3s linear infinite; */
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  overflow: hidden;
+.Main-page > .video-box > .sec-ani .marquee {
+	display: inline-flex;
 }
 
-.Main-page > .video-box > .ani-1 > .txt > * {
-  transform: translateX(0);
-  white-space: nowrap;
-  animation: ani-1 14s linear infinite;
-  font-size: 9rem;
-  color: #e70017;
-  font-weight: bold;
+.Main-page > .video-box > .sec-ani .marquee .txt {
+	display: flex;
+	font-size: 160px;
+	color: #E70017;
+	font-family: 'Poppins', sans-serif;
+	white-space: nowrap;
+  line-height: 170px;
 }
 
-.Main-page > .video-box > .sec-ani > .txt span {
-  --border-width: 1px;
-  --color: #e70017;
-  color: white;
-  text-shadow: calc(var(--border-width) * 1) 0 0 var(--color),
-    calc(var(--border-width) * -1) 0 0 var(--color),
-    0 calc(var(--border-width) * 1) 0 var(--color),
-    0 calc(var(--border-width) * -1) 0 var(--color);
+.Main-page > .video-box > .sec-ani .marquee .txt strong {
+	display: inline-block;
+	padding: 0 16px;
 }
 
-@keyframes ani-1 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.Main-page > .video-box > .sec-ani .marquee .txt span {
+	-webkit-text-stroke: 1px #E70017;
+    display: block;
+    color: transparent;
+    padding: 0 16px;
+    font-weight: bold;
 }
 
-.Main-page > .video-box > .ani-2 {
-  position: relative;
-  width: 2800px;
-  animation: ani-2 3s linear infinite;
+.Main-page > .video-box > .sec-ani .marquee.n1 {
+	animation: marquee forwards infinite linear 70s;
 }
 
-@keyframes ani-2 {
-  0% {
-    left: -400px;
-  }
-  100% {
-    left: 0;
-  }
+.Main-page > .video-box > .sec-ani .marquee.n2 {
+	animation: marquee2 forwards infinite linear 70s;
 }
 
-.Main-page > .video-box > .sec-ani > .txt {
-  /* font-size: 200px;
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  line-height: 1;
-  color: #e70017;
-  width: 400px; */
+@keyframes marquee {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-50%);
+	}
 }
 
-/* .Main-page > .video-box > .sec-ani > .txt span {
-  --border-width: 1px;
-  --color: #e70017;
-  color: white;
-  text-shadow: calc(var(--border-width) * 1) 0 0 var(--color),
-    calc(var(--border-width) * -1) 0 0 var(--color),
-    0 calc(var(--border-width) * 1) 0 var(--color),
-    0 calc(var(--border-width) * -1) 0 var(--color);
-} */
+@keyframes marquee2 {
+	from {
+		transform: translateX(-50%);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+}
 /* sec animation end */
 /* Promotion Video end */
 
